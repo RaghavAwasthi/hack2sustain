@@ -8,6 +8,12 @@ module.exports = {
         },
         // good to know: add default line height https://tailwindcss.com/docs/font-size#app
         extend: {
+            keyframes: {
+                wiggle: {
+                  '0%, 100%': { transform: 'rotate(-3deg)' },
+                  '50%': { transform: 'rotate(3deg)' },
+                }
+               },
             fontFamily: {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans]
             },
