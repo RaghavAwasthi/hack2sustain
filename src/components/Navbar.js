@@ -43,10 +43,10 @@ export default function Navbar(props) {
             }
             id="example-navbar-warning"
           >
-            
+
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-            
-                
+
+
 
               <li className="flex items-center">
                 <button
@@ -59,7 +59,7 @@ export default function Navbar(props) {
                   type="button"
                   style={{ transition: "all .15s ease" }}
                 >
-                 Register
+                  Register
                 </button>
               </li>
             </ul>

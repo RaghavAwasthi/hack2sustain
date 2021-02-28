@@ -68,28 +68,28 @@ export default function Footer() {
                   <ul className="list-unstyled">
                     <li>
                       <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                         href="https://www.creative-tim.com/presentation">About Us
+                        href="https://www.creative-tim.com/presentation">About Us
                       </a>
                     </li>
                     <li>
                       <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                         href="https://blog.creative-tim.com">Blog
+                        href="https://blog.creative-tim.com">Blog
                       </a>
                     </li>
                     <li>
                       <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                         href="https://www.github.com/creativetimofficial">Github
+                        href="https://www.github.com/creativetimofficial">Github
                       </a>
                     </li>
                     <li>
                       <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                         href="https://www.creative-tim.com/bootstrap-themes/free">Free Products
+                        href="https://www.creative-tim.com/bootstrap-themes/free">Free Products
                       </a>
                     </li>
 
                   </ul>
                 </div>
-                </div>
+              </div>
             </div>
           </div>
           <hr className="my-6 border-gray-400" />

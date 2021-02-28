@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tabs = ({ color }) => {
+const Tabs2 = ({ color }) => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
@@ -18,7 +18,7 @@ const Tabs = ({ color }) => {
                     ? "text-white bg-" + color + "-600"
                     : "text-" + color + "-600 bg-white")
                 }
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(1);
                 }}
@@ -26,26 +26,8 @@ const Tabs = ({ color }) => {
                 href="#link1"
                 role="tablist"
               >
-                <i className="fas fa-space-shuttle text-base mr-1"></i> Profile
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 2
-                    ? "text-white bg-" + color + "-600"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={e => {
-                  e.preventDefault();
-                  setOpenTab(2);
-                }}
-                data-toggle="tab"
-                href="#link2"
-                role="tablist"
-              >
-                <i className="fas fa-cog text-base mr-1"></i>  Settings
+                <i className="fas fa-space-shuttle text-base mr-1"></i>Charges
+                to participate in H2S ?
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -56,7 +38,7 @@ const Tabs = ({ color }) => {
                     ? "text-white bg-" + color + "-600"
                     : "text-" + color + "-600 bg-white")
                 }
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(3);
                 }}
@@ -64,7 +46,28 @@ const Tabs = ({ color }) => {
                 href="#link3"
                 role="tablist"
               >
-                <i className="fas fa-briefcase text-base mr-1"></i>  Options
+                <i className="fas fa-briefcase text-base mr-1"></i> Can I start
+                writing code before Hackathon ?
+              </a>
+            </li>
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                  (openTab === 2
+                    ? "text-white bg-" + color + "-600"
+                    : "text-" + color + "-600 bg-white")
+                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenTab(2);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
+                <i className="fas fa-cog text-base mr-1"></i> Will Certificates
+                be provided ?
               </a>
             </li>
           </ul>
@@ -73,33 +76,23 @@ const Tabs = ({ color }) => {
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                   <p>
-                    Collaboratively administrate empowered markets via
-                    plug-and-play networks. Dynamically procrastinate B2C users
-                    after installed base benefits.
-                    <br />
-                    <br /> Dramatically visualize customer directed convergence
-                    without revolutionary ROI.
+                    It's absolutely FREE! Just put on your learning caps and hop
+                    on.
                   </p>
                 </div>
+
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <p>
-                    Completely synergize resource taxing relationships via
-                    premier niche markets. Professionally cultivate one-to-one
-                    customer service with robust ideas.
-                    <br />
-                    <br />
-                    Dynamically innovate resource-leveling customer service for
-                    state of the art customer service.
+                    Yes, participation certificates will be provided to all who
+                    submit the project before deadline and fill the feedback
+                    form.
                   </p>
                 </div>
+
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                   <p>
-                    Efficiently unleash cross-media information without
-                    cross-media value. Quickly maximize timely deliverables for
-                    real-time schemas.
-                    <br />
-                    <br /> Dramatically maintain clicks-and-mortar solutions
-                    without functional solutions.
+                    No. In the interest of fairness, students should not be
+                    working on their projects before the hackathon begins.
                   </p>
                 </div>
               </div>
@@ -114,7 +107,7 @@ const Tabs = ({ color }) => {
 export default function TabsRender() {
   return (
     <>
-      return <Tabs color="indigo" />;
+      return <Tabs2 color="indigo" />;
     </>
   );
 }
